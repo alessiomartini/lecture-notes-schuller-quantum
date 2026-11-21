@@ -1,0 +1,7 @@
+# Third-party material and downloads: local only, never committed
+materials/
+build/
+__pycache__/
+*.pyc
+Thumbs.db
+.DS_Store

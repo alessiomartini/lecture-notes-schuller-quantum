@@ -1,0 +1,86 @@
+\documentclass[12pt,oneside,openany]{book}
+\input{preamble}
+
+% Compile only some chapters while working on them, e.g.:
+% \includeonly{chapters/ch01-<slug>}
+
+\begin{document}
+
+\frontmatter
+\begin{titlepage}
+  \centering
+  \vspace*{3cm}
+  {\Huge\bfseries Quantum Theory\par}
+  \vspace{1cm}
+  {\Large Lecture notes\par}
+  \vspace{0.5cm}
+  {\large based on the video lectures by Frederic P.~Schuller\\
+  (Friedrich-Alexander-Universit\"at Erlangen-N\"urnberg)\\
+  Part I: \emph{Theoretische Quantenmechanik} (TP-2, 20 lectures, German, winter semester 2014/15)\\Part II: \emph{Lectures on Quantum Theory} (21 lectures, English, summer semester 2015)\par}
+  \vspace{2cm}
+  {\large Personal study notes of Alessio Martini\par}
+  \vfill
+  \begin{minipage}{0.85\textwidth}\small
+    These notes are a personal, non-commercial study aid derived from the recorded lectures by Frederic P.~Schuller
+    (YouTube and \url{https://www.fau.tv/series/theoretische-physik-2-theoretische-quantenmechanik-tp-2-w14} and \url{https://www.fau.tv/series/lectures-on-quantum-theory-elite-graduate-programme-2015-measurements-s15}).
+    Lecture content is paraphrased from the (automatic) transcripts of the videos, not transcribed;
+    the blackboard notation is reconstructed from what is said, and doubtful points are marked~[?].
+    Any mistakes are mine. All rights on the original lectures belong to their authors.
+  \end{minipage}
+  \vspace{1cm}
+\end{titlepage}
+
+\chapter*{How to use these notes}
+\addcontentsline{toc}{chapter}{How to use these notes}
+\begin{paracol}{2}
+
+There is one chapter per lecture, and the sections of a chapter follow the lecture in the order in which
+Schuller presents them. Every chapter opens with a \textbf{Sources} box (the video, its length, what it
+contains) and a \textbf{Reading} box pointing to the matching chapters of the other Schuller notes sets.
+Definitions, theorems and proofs are written as on his blackboard; everything else he says (motivation,
+remarks, digressions, jokes with a point) is kept, the side remarks in the right column.
+
+\paragraph{Boxes.}
+\begin{itemize}
+  \item \textcolor{defcol}{\textbf{Definitions}} (blue), \textcolor{thmcol}{\textbf{theorems, propositions, corollaries}} (red),
+        \textcolor{exercol}{\textbf{exercises}} and \textcolor{srccol}{\textbf{remarks}} are marked with a
+        coloured bar on the left. A definition box titled \emph{New concepts} marks the first time a concept appears.
+  \item \textcolor{keycol}{\textbf{Key concepts}} at the end of each chapter: retrieval questions, then the concepts.
+  \item \textcolor{intucol}{\textbf{Intuition}} boxes give the picture behind a definition.
+  \item \textcolor{srccol}{\textbf{Reading}} boxes point to the other notes sets and to Schuller's papers.
+  \item \textbf{Beyond the core} blocks (grey bar on the left, smaller type) hold material that can be
+        skipped on a first reading.
+\end{itemize}
+
+\paragraph{The right column.} The page is laid out for a screen: the text is always on the left and a
+column on the right holds \textcolor{intcol}{\textbf{examples}}, \textcolor{thmcol}{\textbf{proofs}},
+\textcolor{srccol}{\textbf{course notes}}, \textcolor{histcol}{\textbf{history}} boxes and
+\textcolor{histcol}{\textbf{asides}}, your \textcolor{notecol!80!black}{\textbf{notes}} with their
+\textcolor{anscol}{\textbf{answers}}, and \textcolor{exercol}{\textbf{feedback}} on your solutions.
+
+\paragraph{Video timestamps.} A tag such as \ts{1}{1}{28:22}\ means: lecture~1, at minute 28:22 of the
+video. Every tag is a link to the YouTube video at that second.
+
+\paragraph{Two courses.} Chapters 1--20 follow the German course TP-2 (written in English; the first occurrence of a term keeps the German in parentheses, e.g.\ phase space (Phasenraum)), chapters 21--41 follow the English course \emph{Lectures on Quantum Theory}. Topics that appear in both are cross-referenced, not merged.
+
+\paragraph{Your annotations.} While reading, write directly in the chapter files. The macro
+\verb|\note{...}| prints a comment in the right column next to the text where it is written. Requests
+about the notes themselves are collected in the chapter \emph{Requests about these notes}.
+
+\flushside
+\end{paracol}
+
+\include{chapters/ch00-requests}
+
+\tableofcontents
+
+\mainmatter
+\mainmatter
+% \part{TP-2: Theoretische Quantenmechanik} (chapters 1--20)
+% \part{Lectures on Quantum Theory} (chapters 21--41)
+% (no lecture chapters yet)
+
+\appendix
+\include{appendices/appA-exam}
+
+\end{document}
